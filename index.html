@@ -1,62 +1,271 @@
----
-layout: page
-title: Himanshu Arora
-subtitle: Entrepreneurship/Deep Learning/Computer Vision/Travel/Cricket 
-css: "/css/index.css"
-bigimg:
-  - "/img/back.png" : "Google's Deep Dream"
----
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+<html>
+  <head>
+    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+    <style type="text/css">
+/* Layout and HTML pieces the work of Jon Barron http://www.cs.berkeley.edu/~barron/ */
+      a {
+      color: #1772d1;
+      text-decoration:none;
+      }
+      a:focus, a:hover {
+      color: #f09227;
+      text-decoration:none;
+      }
+      body,td,th {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+      }
+      strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+      }
+      heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 700
+      }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <title>Tejas Khot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+    ga('create', 'UA-76678346-1', 'auto');
+    ga('send', 'pageview');
 
-    <div class="post-entry">
-      {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
+    </script>
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags: 
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
 
-   </article>
-  {% endfor %}
-</div>
+  </head>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+  <body>
+    <table width="850" border="0" align="center" cellpadding="20">
+      <tr>
+	<td>
+          <table width="100%" align="center" border="0" cellpadding="10">
+            <tr>
+              <td width="67%" valign="middle">
+		<p align="center"><font size="6">Tejas S Khot</font></p>
+		<p align="justify">
+                    I completed my Bachelors from <a href="http://mu.ac.in/portal/">University of Mumbai, India</a>,
+                    majoring in Computer Engineering. My research interests lie at the intersection of Machine Learning,
+                    Computer Vision and Natural Language Processing. I am particularly interested in understanding the
+                    cognitive abilities of humans with regards perception which encompasses several closely tied areas of
+                    study. Many breakthroughs in deep learning, such as dropout and attention, have been inspired by their biological
+                    counterparts. I want to study how intelligence emerges from raw data and its multi-modal associations with memory,
+                    perception and action. At some point in my academic career I wish to explore these and some of the other larger
+                    goals of Artificial Intelligence.
+                    <br><br>
+
+                    Since July 2016, I am working as a Research Scholar with <a href="https://filebox.ece.vt.edu/~dbatra/">Dr. Dhruv Batra</a> and
+                    <a href="https://filebox.ece.vt.edu/~parikh/">Dr. Devi Parikh</a> who lead the
+                    <a href="https://mlp.ece.vt.edu/">Machine Learning and Perception Lab</a> and
+                    <a href="https://filebox.ece.vt.edu/~parikh/CVL.html">Computer Vision Lab</a>
+                    respectively at <b>Virgina Tech</b>. For complex tasks such as <a href="http://visualqa.org/">Visual
+                    Question Answering</a>,
+                    language provides a strong prior that can often result in good superficial performance, without the underlying models
+                    truly understanding the visual content. My current research focuses on addressing this bias and on ways to improve
+                    the grounding of concepts from language and visuals.
+                    <br><br>
+
+                    I am also collaborating with <a href="http://www.sarathchandar.in/">Sarath Chandar</a>, PhD student at
+                    <b>Universit&eacute; de Montr&eacute;al</b>, on the task of Knowledge Base Completion using Deep Learning.
+                    <br><br>
+                    <br><br>
+		</p>
+		<p align=center>
+		  <a href="mailto:tjskhot@vt.edu">Email</a> /
+                  <a href="https://github.com/tejaskhot">GitHub</a> /
+                  <a href="https://in.linkedin.com/in/tejaskhot">LinkedIn</a>
+		</p>
+              </td>
+              <td width="20%">
+              <br>
+              <br>
+		<img width="175"
+                     src="images/tejas_khot.jpeg"
+                     alt="Tejas Khot">
+	      </td>
+            </tr>
+          </table>
+
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tr>
+              <td>
+                <hr>
+                <font size="5">Academic Life</font>
+              </td>
+            </tr>
+          </table>
+
+	  <table width="100%" align="center" border="0" cellpadding="20">
+
+      <tr>
+          <b>&nbsp &nbsp Undergraduate Thesis &nbsp &nbsp &nbsp &nbsp| &nbsp &nbsp &nbsp Action Based Cognition :
+           Embodied Cognitive Robotics</b><br>
+           <b>&nbsp &nbsp<i>Advisor : &nbsp</i></b> <a href="http://www.hbcse.tifr.res.in/people/academic/nagarjuna-g/nagarjuna-g"> Dr.
+           Nagarjuna G. </a>
+           , <i>Tata Institute of Fundamental Research</i><br><br>
+          Embodied cognition, the idea that the mind is not only connected to the body but that the body influences the mind, is
+          one of the more counterintuitive ideas in cognitive science. The embodied cognition hypothesis is the idea that cognition
+          is mediated by representations expressed in the vocabulary and format of sensory and motor representations. The core of the
+          embodied cognition hypothesis is the claim that the format of cognitive representations is modality-specific and not abstract
+          or amodal. The question that implicitly drives most research and discussion is: Why is the sensorimotor system activated
+          during tasks that do not overtly require sensorimotor processing? As a part of this exploratory thesis, taking the approach of
+          epigenetic robotics, we propose that cognitive process is linked with motor actions and is proprioceptive. According to this model,
+          there is no unconscious perception and all seeing is seeing as and cause of perception is conscious action. We show, via
+          simulations, how fundamental components of vision such as edge detection, depth perception and relative placement of objects in
+          a scene can be solved with minimal computation in the presence of motor actions.
+      </tr>
+ 	    <tr>
+	      <td width="25%" valign="top">
+		      <img src="images/destin.png" width="250" style="border-style: none">
+	      </td>
+	      <td width="75%" valign="top">
+      		<p>
+              <b>Google Summer of Code 2015 &nbsp &nbsp | &nbsp &nbsp The OpenCog Foundation</b><br>
+              <b><i>Mentor : &nbsp</i></b> Yuhuang Hu, <a href="http://wp.goertzel.org/"> Dr. Ben Goertzel </a><br><br>
+              Deep SpatioTemporal Inference Network (DeSTIN) is a scalable deep learning architecture that relies on a combination of
+               unsupervised learning and Bayesian inference. The paper <a href="http://web.eecs.utk.edu/~itamar/Papers/BICA2009.pdf">
+              DeSTIN: A Scalable Deep Learning Architecture with Application to High-Dimensional Robust Pattern Recognition</a> by
+              <i>Itamar Arel, Derek Rose,</i> and <i>Robert Coop</i> describes this method.
+              Briefly put, DeSTIN uses online clustering algorithms to hierarchically create cetroids in a way that loosely mimics the
+              way humans understand things. In the DeSTIN architecture a hierarchy of layers is used, where each layer consists of
+              multiple instantiations of an identical circuit or node which follow a defined spatial orientation for imaging
+              applications (generally speaking, however, the spatial relationship can vary according to the problem domain).
+              Each node learns to generalize and represent a temporal sequence of observations through unsupervised learning.
+              I implemented a new flavor of DeSTIN based on Stacked Convolutional Auto-encoders and tested on CIFAR-10 and CIFAR-100
+              datasets.<br>
+              <a href="http://wiki.opencog.org/wikihome/index.php/Deep_Learning_Perception_in_OpenCog">[project details]</a>&nbsp
+              <a href="https://github.com/opencog/python-destin">[code]</a>&nbsp
+              <a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/tejas_khot/5741031244955648">[GSOC Page]</a>
+      		</p>
+	      </td>
+	    </tr>
+      <tr>
+        <td width="25%" valign="top">
+          <img src="images/conv_autoencoder.png" width="250" style="border-style: none">
+        </td>
+        <td width="75%" valign="top">
+          <p>
+              <b>Research Intern, 2015 &nbsp &nbsp | &nbsp &nbsp Advanced Robotics Lab, University of Malaya</b>
+              <b><i>Advisor : &nbsp</i></b><a href="https://umexpert.um.edu.my/ckloo-um"> Dr. Loo Chu Kiong</a><br><br>
+              I worked on using <a href="http://minds.jacobs-university.de/conceptors">conceptor networks</a> to improve image
+              classification performance on datasets like MNIST, CIFAR-10, CIFAR-100. I also used Stacked Convolutional Auto-encoders and
+              spherical clustering, alongside hierarchical architectures like DeSTIN, for learning temporal dependencies in videos on
+              datasets like KTH.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="25%" valign="top">
+          <img src="images/mlss_kyoto.png" width="250" style="border-style: none">
+        </td>
+        <td width="75%" valign="top">
+          <p>
+              <b>Machine Learning Summer School - MLSS 2015, Kyoto</b><br>
+              This was a fun intoduction to some very diverse topics in Machine Learning. A lot of the material was new to me and it was
+              nice to learn about some advanced topics like Submodular Functions, Selective Inference, Concentration Inequalities, Stochastic
+              Optimization and the like.<br>
+              <a href="http://www.i.kyoto-u.ac.jp/mlss15/">[MLSS Kyoto]</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="25%" valign="top">
+          <img src="images/lps_x.png" height="200" width="150" style="border-style: none">
+        </td>
+        <td width="75%" valign="top">
+          <p>
+              <b>Lectures on Probability and Stochastic Processes X </b><br>
+              I attended the 2015 LPS series on <i>Markov chains: Mixing time, cover time, and rate of escape</i> by <i>Yuval Peres, Microsoft Research,
+              Redmond</i>. This was a good mathematical extension to the limited material usually taught about Markov Chains in ML courses.<br>
+              <a href="http://www.isid.ac.in/~lps16/PastWebsites/LPS10/index.php">[LPS X]</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="25%" valign="top">
+          <img src="images/xrds.png" width="250" style="border-style: none">
+        </td>
+        <td width="75%" valign="top">
+          <p>
+              <b>ACM XRDS : The ACM Magazine for Students</b><br>
+              From April 2015 - July 2016, I was the department head of the <b>Pointers</b> section of the magazine since April 2015.<br>
+              In July 2016, I was promoted to the position of department head of the <b>Hello World</b> section.
+              <a href="http://xrds.acm.org/">[ACM XRDS]</a> &nbsp
+              <a href="http://xrds.acm.org/get-involved.cfm">[Get Involved]</a>
+              <a href="https://github.com/acmxrds">[Github Repository]</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="25%" valign="top">
+          <img src="images/mit_di.png" width="250" style="border-style: none">
+        </td>
+        <td width="75%" valign="top">
+          <p>
+              <b>MIT Media Lab : Design Innovation Workshop 2015</b><br>
+              A week of DIY hacking as a part of the <i>Smart Textiles</i> track. I worked on two interesting projects:
+              <ul>
+                <li><b>Singing Curtains</b> : Flat fabric speakers made out of embroidered highly conductive thread and neodymium magnets which can be
+                embedded in any textile garment.</li>
+                <li><b>Fabric moisture sensor</b> : One of its kind fabric moisture sensor which detects wetness of fabric and wirelessly transmits
+                messages indicating moisture content. It not only detects moisture but also measures it.</li>
+              </ul>
+              <br>
+              <a href="http://india.media.mit.edu/">[MIT DI India]</a> &nbsp
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="25%" valign="top">
+          <img src="images/invenzone.png" width="250" style="border-style: none">
+        </td>
+        <td width="75%" valign="top">
+          <p>
+              <b>Software Development Intern | InvenZone</b><br>
+              Generated regression based statistical models for time series approximation and predictive analytics. Experimented with an image
+              classification / object detection model.<br>
+              <a href="http://www.invenzone.com/">[InvenZone]</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="25%" valign="top">
+          <img src="images/silver_leaf_caps.png" width="250" style="border-style: none">
+        </td>
+        <td width="75%" valign="top">
+          <p>
+              <b>Software Development Intern | Silver Leaf Capital Services</b><br>
+              Developed a predictive model to predict stock splits in NSE(India) and BSE with over 90% accuracy. Designed and developed a prototype
+              for stock portfolio management system.<br>
+              <a href="http://www.silverleafcaps.com/">[Silver Leaf Caps]</a>
+          </p>
+        </td>
+      </tr>
+          </table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tr>
+              <td>
+                <br>
+                <p align="right"><font size="2">
+                  <a href="http://www.cs.berkeley.edu/~barron/">(Like the layout? Check out its origin!)</a>
+                  </font>
+                </p>
+              </td>
+            </tr>
+          </table>
+    </table>
+  </body>
+</html>
