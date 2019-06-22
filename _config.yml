@@ -1,11 +1,9 @@
 # main text of home
-<<<<<<< HEAD
-# name: John Doe
-# bio: A Man who travels the world eating noodles
-# =======
-name: Himanshu Arora
+
+name: John Doe
 bio: A Man who travels the world eating noodles
->>>>>>> 2d95f50e7bf817d3b6bbd4fbf2eca14374c892b4
+
+
 
 # twitter summary info
 description: A blog about technology and stuff related
