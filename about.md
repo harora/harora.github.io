@@ -2,7 +2,7 @@
 title: About
 layout: page
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
+<!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
 <p>I'm currently pursuing Masters in Computer Science from Simon Fraser University specializing in Visual Computing.
 My research interests are 3D vision, federated learning and active learning.</p>
