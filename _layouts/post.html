@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  <script src="https://utteranc.es/client.js"
+        repo="derifatives/derifatives.github.io"
+        issue-term="pathname"
+        async>
+  </script>
+
+</article>
