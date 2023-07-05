@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is Himanshu. I am a graduate student at Simon Fraser University enrolled in the MSc Computer Science program with a specialisation in Visual Computing. 
-
+I'm no more a student as it says above. I'm more independent than i was as a student and hated being a student. Not because i disliked learning because i hate deadlines. Anyway, this blog is my thoughts (or rants?). 
 
 
 ### Contact me
