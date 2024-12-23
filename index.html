@@ -3,172 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <meta name="description" content="Coming soon page with countdown timer">
+    <title>My Blog</title>
+    <meta name="description" content="Personal blog and thoughts">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .navbar {
+            background: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #666;
         }
 
         .container {
-            padding: 20px;
-            max-width: 600px;
-            animation: fadeIn 1s ease-in;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .post-preview {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
         }
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+        .post-preview h2 {
+            margin: 0;
         }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
+        .post-preview a {
+            color: #333;
+            text-decoration: none;
         }
 
-        #countdown {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 40px;
+        .post-preview a:hover {
+            color: #666;
         }
 
-        .countdown-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            min-width: 80px;
-        }
-
-        .countdown-number {
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        .countdown-label {
-            font-size: 0.8em;
-            text-transform: uppercase;
-        }
-
-        .email-form {
-            margin-top: 30px;
-        }
-
-        input[type="email"] {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 25px;
-            width: 250px;
-            margin-right: 10px;
-            outline: none;
-        }
-
-        button {
-            padding: 12px 30px;
-            border: none;
-            border-radius: 25px;
-            background: #4CAF50;
-            color: white;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        button:hover {
-            background: #45a049;
-        }
-
-        /* Add form submission feedback */
-        .success-message {
-            color: #4CAF50;
-            display: none;
-            margin-top: 10px;
+        .post-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Coming Soon</h1>
-        <p>We're working hard to bring you something amazing. Stay tuned!</p>
-        
-        <div id="countdown">
-            <div class="countdown-item">
-                <div class="countdown-number" id="days">00</div>
-                <div class="countdown-label">Days</div>
-            </div>
-            <div class="countdown-item">
-                <div class="countdown-number" id="hours">00</div>
-                <div class="countdown-label">Hours</div>
-            </div>
-            <div class="countdown-item">
-                <div class="countdown-number" id="minutes">00</div>
-                <div class="countdown-label">Minutes</div>
-            </div>
-            <div class="countdown-item">
-                <div class="countdown-number" id="seconds">00</div>
-                <div class="countdown-label">Seconds</div>
-            </div>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="posts.html">Posts</a>
         </div>
+    </nav>
 
-        <div class="email-form">
-            <form id="notify-form" onsubmit="handleSubmit(event)">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Notify Me</button>
-                <div class="success-message">Thank you for subscribing!</div>
-            </form>
+    <div class="container">
+        <h1>Welcome to My Blog</h1>
+        <div class="post-preview">
+            <h2><a href="posts/welcome.html">Welcome to My Blog</a></h2>
+            <div class="post-date">March 14, 2024</div>
+            <p>This is my first blog post. I'll be sharing my thoughts and experiences here...</p>
         </div>
     </div>
-
-    <script>
-        // Set the launch date (change this to your desired date)
-        const launchDate = new Date('2024-12-31T00:00:00').getTime();
-
-        // Update countdown every second
-        const countdown = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = launchDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
-            document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
-
-            if (distance < 0) {
-                clearInterval(countdown);
-                document.getElementById('countdown').innerHTML = "We're Live!";
-            }
-        }, 1000);
-
-        function handleSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const email = form.querySelector('input[type="email"]').value;
-            // Here you would typically send the email to your backend
-            console.log('Email submitted:', email);
-            
-            // Show success message
-            form.querySelector('.success-message').style.display = 'block';
-            form.querySelector('input[type="email"]').value = '';
-        }
-    </script>
 </body>
 </html>
