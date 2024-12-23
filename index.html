@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
+    <meta name="description" content="Coming soon page with countdown timer">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
             margin: 0;
@@ -21,6 +23,12 @@
         .container {
             padding: 20px;
             max-width: 600px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         h1 {
@@ -83,6 +91,13 @@
         button:hover {
             background: #45a049;
         }
+
+        /* Add form submission feedback */
+        .success-message {
+            color: #4CAF50;
+            display: none;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -110,8 +125,11 @@
         </div>
 
         <div class="email-form">
-            <input type="email" placeholder="Enter your email">
-            <button>Notify Me</button>
+            <form id="notify-form" onsubmit="handleSubmit(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Notify Me</button>
+                <div class="success-message">Thank you for subscribing!</div>
+            </form>
         </div>
     </div>
 
@@ -139,6 +157,18 @@
                 document.getElementById('countdown').innerHTML = "We're Live!";
             }
         }, 1000);
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const email = form.querySelector('input[type="email"]').value;
+            // Here you would typically send the email to your backend
+            console.log('Email submitted:', email);
+            
+            // Show success message
+            form.querySelector('.success-message').style.display = 'block';
+            form.querySelector('input[type="email"]').value = '';
+        }
     </script>
 </body>
 </html>
