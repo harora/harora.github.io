@@ -1,0 +1,12 @@
+title: Harsh Arora
+description: Personal blog
+baseurl: ""
+url: "https://harora.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+
+exclude:
+  - LICENSE
+  - README.md 
