@@ -2,11 +2,9 @@
 layout: post
 title: "ICL: In-Context Learning (Part 1)"
 categories: llm
-author:
-- Himanshu Arora
+author: Himanshu Arora
 published: true
 ---
-
 
 AI has exploded in the last two years, largely due to a massive leap in the capabilities of Language Models (LMs). We've seen models grow from 300 million parameters to hundreds, even thousands, of billions. AI giants like OpenAI, Anthropic, and Google are constantly pushing boundaries, releasing powerful models which have undergone pre-training on vast datasets of text and code.
 
@@ -14,37 +12,38 @@ One way we interact with these Large Language Models (LLMs) is through In-Contex
 
 This is the first in a three-part blog series exploring In-Context Learning. We'll deconstruct ICL in this post, look at its advancements in the second, and finally explore future research directions in the third.
 
-### Deconstructing In-Context Learning
+## Deconstructing In-Context Learning
 
 At its core, ICL exhibits characteristics of meta-learning, where the model appears to have implicitly acquired a learning algorithm during pre-training. This enables it to adapt to new tasks based on limited in-context examples or instructions [3]. This differs significantly from conventional fine-tuning, where the model's parameters are explicitly updated through gradient descent to minimize a task-specific loss. In ICL, the model leverages its internal representations to learn from the provided context without any parameter updates.
 
 In-context learning effectively hinges on the rich representations learned during pre-training, which encode not only linguistic knowledge but capture intricate relationships and patterns in the data. These learnings allow them to recognize task structures and generalize to unseen inputs when presented with a few demonstrations.
 
-#### Types of Context: More than Just Showing Examples
-
+## Types of Context: More than Just Showing Examples
 
 ICL is more than just providing a few examples. It's about crafting the right kind of context to guide the LLM. Here are a few ways to do that:
 
-- **Demonstration Context:** This is the most common form of ICL, often referred to as "few-shot learning." We simply provide the LLM with a few examples of input-output pairs, with or without instructions. It's similar to how we learn patterns: Toyota : Japan :: Tesla : ?
+### Demonstration Context
+This is the most common form of ICL, often referred to as "few-shot learning." We simply provide the LLM with a few examples of input-output pairs, with or without instructions. It's similar to how we learn patterns: Toyota : Japan :: Tesla : ?
 
-    ```
-    Translate the following English sentences into French:
+```
+Translate the following English sentences into French:
 
-    English:  "This croissant is delicious! Where did you get it?"
-    French: "Ce croissant est délicieux ! Où l'avez-vous acheté ?"
+English:  "This croissant is delicious! Where did you get it?"
+French: "Ce croissant est délicieux ! Où l'avez-vous acheté ?"
 
-    English: I would like to order a coffee.
-    French:
-    ```
+English: I would like to order a coffee.
+French:
+```
 
-- **Instructional Context:** Instead of just showing examples, you tell. You provide explicit instructions or guidelines on how to perform the task. For example, you might provide a set of rules for summarizing an article or generating a poem.
+### Instructional Context
+Instead of just showing examples, you tell. You provide explicit instructions or guidelines on how to perform the task. For example, you might provide a set of rules for summarizing an article or generating a poem.
 
-- **Priming Context:** This is like setting the mood. You provide text that is related to the task or domain, even if it doesn't explicitly demonstrate the task. This can help "prime" the model to generate more relevant and coherent responses. For example, providing a news article about climate change before asking it to write an essay on the topic.
+### Priming Context
+This is like setting the mood. You provide text that is related to the task or domain, even if it doesn't explicitly demonstrate the task. This can help "prime" the model to generate more relevant and coherent responses. For example, providing a news article about climate change before asking it to write an essay on the topic.
 
-- **Hybrid Context:** This combines different types of context, such as demonstrations and instructions, to provide a richer learning signal for the model. This could involve providing examples of product descriptions along with guidelines on what information to include
+### Hybrid Context
+This combines different types of context, such as demonstrations and instructions, to provide a richer learning signal for the model. This could involve providing examples of product descriptions along with guidelines on what information to include.
 
-
-
-### Next Steps
+## Next Steps
 
 ICL has evolved a lot more than prompting strategies and is an active topic of research in Machine Learning. In the next blog post, we will look at some of the techniques being used to improve In-Context Learning.
