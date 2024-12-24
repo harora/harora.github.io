@@ -2,14 +2,16 @@
 ---
 
 .post-categories {
-  margin-bottom: 8px;
+  margin: 5px 0;
 }
 
 .post-category {
-  background: #f0f0f0;
-  padding: 3px 8px;
+  background: #e8e8e8;
+  padding: 2px 6px;
   border-radius: 3px;
-  font-size: 14px;
-  margin-right: 5px;
-  color: #666;
+  font-size: 12px;
+  margin-right: 4px;
+  color: #828282;
+  text-transform: lowercase;
+  display: inline-block;
 } 
