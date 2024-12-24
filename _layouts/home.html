@@ -21,7 +21,7 @@ layout: default
         {%- if post.categories -%}
         <div class="post-categories">
           {% for category in post.categories %}
-            <span class="post-category">{{ category }}</span>
+            <a class="tag">{{ category }}</a>
           {% endfor %}
         </div>
         {%- endif -%}
