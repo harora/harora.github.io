@@ -7,6 +7,6 @@ permalink: /about/
 This blog is a collection of my learnings and thoughts. I plan to write about:    
 
 - Large Language Models
-- Machine Learning
 - ML Tools
+- Thoughts about life
 - Who knows what else!
