@@ -1,12 +1,12 @@
-title: Applied ML Blog
+title: Your awesome title
 author:
-  name: 
-  email: himanshu@appliedml.ca
+  name: GitHub User
+  email: your-email@domain.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  
+  Write an awesome description for your new site here.
 
 # Build settings
 
