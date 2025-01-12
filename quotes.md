@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Favorite Quotes
+title: Quotes
 permalink: /quotes/
 ---
 <style>
@@ -63,7 +63,7 @@ permalink: /quotes/
 </style>
 
 <div class="quote-container">
-    <h1>Favorite Quotes</h1>
+    <!-- <h1>Favorite Quotes</h1> -->
     <p>A collection of inspiring one-liners that resonate with me.</p>
 
     <div class="quote-box bg-sage">
