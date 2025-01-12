@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Fav Quotes
+title: Quotes
 permalink: /quotes/
 ---
 
 Here are some of my favorite quotes:
 
-> "Ambition without action becomes anxiety."  
+> Ambition without action becomes anxiety. 
 
-> Pessimists sounds smart. Optimists make money
-> - Nat Friedman
+> Pessimists sound smart. Optimists make money - Nat Friedman
