@@ -67,7 +67,7 @@ permalink: /quotes/
     <p>A collection of based one-liners that resonate with me.</p>
 
     <div class="quote-box bg-sage">
-        <div class="quote-text">"Ambition without action becomes anxiety."</div>
+        <div class="quote-text">"Ambition without action is fantasy."</div>
         <div class="quote-author">— Derek Sivers</div>
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
     </div>
