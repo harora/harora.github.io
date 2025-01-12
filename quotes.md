@@ -64,7 +64,7 @@ permalink: /quotes/
 
 <div class="quote-container">
     <!-- <h1>Favorite Quotes</h1> -->
-    <p>A collection of inspiring one-liners that resonate with me.</p>
+    <p>A collection of based one-liners that resonate with me.</p>
 
     <div class="quote-box bg-sage">
         <div class="quote-text">"Ambition without action becomes anxiety."</div>
@@ -79,8 +79,8 @@ permalink: /quotes/
     </div>
 
     <div class="quote-box bg-peach">
-        <div class="quote-text">"The best time to plant a tree was 20 years ago. The second best time is now."</div>
-        <div class="quote-author">— Chinese Proverb</div>
+        <div class="quote-text">"Humility is not thinking less of yourself, but thinking of yourself less"</div>
+        <div class="quote-author">— C.S Lewis </div>
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
     </div>
 </div>
