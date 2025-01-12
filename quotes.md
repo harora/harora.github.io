@@ -1,47 +1,102 @@
 ---
 layout: page
-title: 
+title: Favorite Quotes
 permalink: /quotes/
 ---
 <style>
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .quote-box {
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.quote-box:hover {
+    transform: translateY(-5px);
 }
 
 .quote-text {
     font-size: 1.2em;
     margin-bottom: 10px;
     font-style: italic;
+    font-family: 'Georgia', serif;
 }
 
 .quote-author {
     font-weight: bold;
     text-align: right;
+    font-family: 'Arial', sans-serif;
 }
 
-.bg-sage {
-    background-color: #E4EFE7;
+.bg-sage { background-color: #E4EFE7; }
+.bg-lavender { background-color: #F0E6EF; }
+.bg-peach { background-color: #FFE5D9; }
+
+.copy-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-top: 10px;
 }
 
-.bg-lavender {
-    background-color: #F0E6EF;
+.copy-btn:hover {
+    background-color: #e0e0e0;
 }
 
-.bg-peach {
-    background-color: #FFE5D9;
+@media (max-width: 600px) {
+    .quote-box {
+        margin: 10px 0;
+    }
+    .quote-text {
+        font-size: 1em;
+    }
 }
 </style>
 
-<div class="quote-box bg-sage">
-    <div class="quote-text">"Ambition without action is fantasy."</div>
-    <div class="quote-author">— Derek Sivers</div>
+<div class="quote-container">
+    <h1>Favorite Quotes</h1>
+    <p>A collection of inspiring one-liners that resonate with me.</p>
+
+    <div class="quote-box bg-sage">
+        <div class="quote-text">"Ambition without action becomes anxiety."</div>
+        <div class="quote-author">— Derek Sivers</div>
+        <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+
+    <div class="quote-box bg-lavender">
+        <div class="quote-text">"Pessimists sound smart. Optimists make money."</div>
+        <div class="quote-author">— Nat Friedman</div>
+        <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+    </div>
+
+    <div class="quote-box bg-peach">
+        <div class="quote-text">"The best time to plant a tree was 20 years ago. The second best time is now."</div>
+        <div class="quote-author">— Chinese Proverb</div>
+        <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+    </div>
 </div>
 
-Some of my favourite one-liners:
+<script>
+function copyToClipboard(btn) {
+    const quoteBox = btn.closest('.quote-box');
+    const quoteText = quoteBox.querySelector('.quote-text').innerText;
+    const quoteAuthor = quoteBox.querySelector('.quote-author').innerText;
+    const fullQuote = `${quoteText} ${quoteAuthor}`;
 
-> Ambition without action becomes anxiety. 
-
-> Pessimists sound smart. Optimists make money - Nat Friedman
+    navigator.clipboard.writeText(fullQuote).then(() => {
+        btn.textContent = 'Copied!';
+        setTimeout(() => {
+            btn.textContent = 'Copy';
+        }, 2000);
+    });
+}
+</script>
